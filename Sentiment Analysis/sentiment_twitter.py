@@ -8,7 +8,9 @@ auth.set_access_token(twitter_auth.ACCESS_TOKEN, twitter_auth.ACCESS_TOKEN_SECRE
 api = tweepy.API(auth)
 
 jml = 50
-tweets = api.search(q=['papua', 'wamena'], count = jml)
+keyword1 = ''
+keyword2 = ''
+tweets = api.search(q=[keyword1, keyword2], count = jml)
 
 sum_polarity = 0
 for tweet in tweets : 
